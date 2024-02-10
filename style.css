@@ -1,18 +1,21 @@
 body {
     background-image: url('g-background.jpg');
-    height: 100%;
-    background-size:cover;
+    height: 100vh; /* Set the height of the body to 100% of the viewport height */
+    background-size: cover;
     font-family: Arial, sans-serif;
+    margin: 0; /* Remove default body margin */
 }
 
 .container {
     display: flex;
-    height: 100%;
+    min-height: 100vh; /* Ensure the container takes at least 100% of the viewport height */
     flex-direction: column;
     align-items: center;
     margin-top: 155px;
-    background-size: cover;
 }
+
+/* ... (rest of your existing styles) */
+
 
 .board {
     display: grid;
